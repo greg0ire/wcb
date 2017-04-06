@@ -1,6 +1,6 @@
 
 
-$form = $_POST(['form']);
+$form = $_POST['form'];
 $tab = json_decode($form);
 
 foreach ($tab as $row) {
