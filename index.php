@@ -19,8 +19,8 @@ foreach ($types as $key => $type) {
                         break;
                 case 'photo':
                         $state = photo($pas);
-        }
+	}
+	
+	echo $state."\n";
 }
-
-echo $state;
 
