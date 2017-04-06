@@ -3,10 +3,8 @@
 $form = $_POST['form'];
 $tab = json_decode($form);
 
-foreach ($tab as $row) {
-        $type = $row['type'];
-        $options = $row['options'];
-
+foreach ($tab['types'] as $key  => $type) {
+        $pas = $row['options'][$key];
 
         switch ($type) {
                 case 'avancer':
