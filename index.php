@@ -10,19 +10,21 @@ foreach ($tab as $row) {
 
         switch ($type) {
                 case 'avancer':
-                        avancer($pas);
+                        $state = avancer($pas);
                         break;
                 case 'mesure':
-                        mesure($pas);
+                        $state = mesure($pas);
                         break;
                 case 'reculer':
-                        reculer($pas);
+                        $state = reculer($pas);
                         break;
                 case 'goder':
-                        goder($pas);
+                        $state = goder($pas);
                         break;
                 case 'photo':
-                        photo($pas);
+                        $state = photo($pas);
         }
 }
+
+echo $state;
 
