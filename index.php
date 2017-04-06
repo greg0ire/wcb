@@ -1,10 +1,8 @@
+$types = $_POST['types'];
+$options = $_POST['options];
 
-
-$form = $_POST['form'];
-$tab = json_decode($form);
-
-foreach ($tab['types'] as $key  => $type) {
-        $pas = $row['options'][$key];
+foreach ($types as $key => $type) {
+        $pas = $options[$key];
 
         switch ($type) {
                 case 'avancer':
